@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config-test
+data:
+  # .Values 뒤에 아까 추가한 변수명을 적습니다.
+  message: {{ .Values.myMessage }}
